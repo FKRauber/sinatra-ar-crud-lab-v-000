@@ -20,4 +20,8 @@ class ApplicationController < Sinatra::Base
     @posts = Post.all
     erb :index
   end
+
+  get '/show' do
+    erb :show
+  end
 end
