@@ -1,3 +1,5 @@
 <form method="POST" action="/models/<%= @model.id %>">
-  
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <input type="text" name="name">
+  <input type="text" name="content">
 </form>
